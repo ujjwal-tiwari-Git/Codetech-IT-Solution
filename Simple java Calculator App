@@ -1,0 +1,133 @@
+package Codetech_Solution;
+
+
+import java.util.*;
+
+public class calculator {
+
+	
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void AddOpration( int a, int b) {
+		System.out.println("enter the first number : ");
+		a=sc.nextInt();
+		System.out.println("enter the second number :  ");
+		b=sc.nextInt();
+		int result = a+b;
+		System.out.println(" the sum of a+b is : ");
+		System.out.println(result);
+		
+	}
+	
+	// here we are using a same name  variable with different argument .
+	
+	public static void AddOpration( int a, int b,int c) {
+		System.out.println("enter the first number : ");
+		a=sc.nextInt();
+		System.out.println("enter the second number :  ");
+		b=sc.nextInt();
+		System.out.println("enter the third number :  ");
+		c=sc.nextInt();
+		int result = a+b+c;
+		System.out.println(" the sum of a+b+c is : ");
+		System.out.println(result);
+		
+	}
+	
+	
+	public static void multiplication(int a , int b) {
+		
+		System.out.println("enter the first number : ");
+		a=sc.nextInt();
+		System.out.println("enter the second number :  ");
+		b=sc.nextInt();
+		int result= a*b;
+		System.out.println(" the multiplication of a*b is : ");
+		System.out.println(result);
+		
+	}
+	
+	
+     public static void subtraction(int a , int b) {
+		
+    	System.out.println("enter the first number : ");
+ 		a=sc.nextInt();
+ 		System.out.println("enter the second number :  ");
+ 		b=sc.nextInt();
+ 		int result= a-b;
+ 		System.out.println(" the subtracton of a-b is : ");
+ 		System.out.println(result);
+     }
+	
+	
+     public static void devision(int a , int b) {
+ 		
+    	System.out.println("enter the first number : ");
+ 		a=sc.nextInt();
+ 		System.out.println("enter the second number :  ");
+ 		b=sc.nextInt();
+ 		int result =a/b;
+ 		System.out.println(" the devision of a/b is : ");
+ 		System.out.println(result);
+     }
+	
+	
+	
+	public static void main(String[] args) {
+		int a=0 ;
+		int b=0;
+		int c=0;
+		
+	
+		
+		
+		
+		// here we are using a switch case for select operation 
+		
+		System.out.println(" plese select hte opration  : ");
+		
+		System.out.println("1. add (2 digit number) 2. add(3 digit number) \n 3. Multiplication 4. division \n 5 subtraction");
+		
+		
+		
+		// using switch case 
+		int opration =sc.nextInt();;
+		
+		switch(opration) {
+		
+		case 1: 
+			  
+			AddOpration(a, b);
+		    break;
+		    
+		    
+		case 2:
+			AddOpration(a, b, c);
+			break;
+			
+		case 3:
+			
+			multiplication(a, b);
+			break;
+			
+		case 4:
+			
+			devision(a, b);
+			break;
+			
+		case 5:
+			subtraction(a, b);
+			break;
+			
+			default:
+				System.out.println(" plese enter the valid option :");
+			
+			
+		
+		}
+		
+		
+		
+		
+	} 
+}
